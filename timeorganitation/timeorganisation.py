@@ -9,16 +9,16 @@ windo.resizable(False,False)
 windo.title('Time Organization')
 windo.config(background='white')
 
-def zaka():
+def About():
     messagebox.showinfo('Welcome' , 'This project for Time Organisation' )
 
-def zaka1():
+def youtube():
     webbrowser.open_new('https://www.youtube.com/channel/UCuCATueQMoLDeGtJIupIW6Q')
 
-def zaka2():
+def facebook():
     webbrowser.open_new('https://web.facebook.com/profile.php?id=100070408725323')
 
-def zaka3():
+def program():
     b = e1.get()
     c =e2.get()
     id ='123456789'
@@ -132,15 +132,15 @@ l4.place(x=120,y=30)
 l5=Label(f2,text='PASSWORD',bg='#5B277C',fg='white',font="Courier 15 bold")
 l5.place(x=50,y=80)
 
-b1=Button(f1,text='ABOUT PROJECT',bg='#4CB3A2',fg='white',width=15,height=2,font="Courier 15",command=zaka)
+b1=Button(f1,text='ABOUT PROJECT',bg='#4CB3A2',fg='white',width=15,height=2,font="Courier 15",command=About)
 b1.place(x=6,y=100)
-b2=Button(f1,text='youtube',bg='red',fg='white',width=8,height=1,font="Courier 8",command=zaka1)
+b2=Button(f1,text='youtube',bg='red',fg='white',width=8,height=1,font="Courier 8",command=youtube)
 b2.place(x=70,y=445)
-b3=Button(f1,text='facebook',bg='blue',fg='white',width=8,height=1,font="Courier 8",command=zaka2)
+b3=Button(f1,text='facebook',bg='blue',fg='white',width=8,height=1,font="Courier 8",command=facebook)
 b3.place(x=136,y=445)
 b4=Button(f1,text='QUIT',bg='#4CB3A2',fg='white',width=15,height=2,font="Courier 15",command=quit)
 b4.place(x=6,y=170)
-b5=Button(f2,text='ENTER',bg='#4CB3A2',fg='white',width=10,height=4,font="Courier 10",command=zaka3)
+b5=Button(f2,text='ENTER',bg='#4CB3A2',fg='white',width=10,height=4,font="Courier 10",command=program)
 b5.place(x=380,y=35)
 
 e1=Entry(f2,width=30)
