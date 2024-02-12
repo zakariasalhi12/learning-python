@@ -6,7 +6,7 @@ windo.geometry('500x400+300+50')
 windo.resizable(False,False)
 windo.title('MAKE QRCODE')
 
-def zaka():
+def qr():
     a = e1.get()
     b = e2.get()
     img = qrcode.make(a)
@@ -26,7 +26,7 @@ l3.place(x=45,y=100)
 l4=Label(f1,text='THE NAME',font='Courier 12 bold',bg='black',fg='white')
 l4.place(x=45,y=150)
 
-b1=Button(f1,text='SAVE',bg='black',fg='white',font='tajawal 13',width=20,command=zaka)
+b1=Button(f1,text='SAVE',bg='black',fg='white',font='tajawal 13',width=20,command=qr)
 b1.place(x=150,y=200)
 
 e1=Entry(f1,width=30)
